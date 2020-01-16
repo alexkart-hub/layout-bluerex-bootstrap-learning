@@ -113,6 +113,95 @@ h4 {
 }
 
 
+/* ======== .section-watch ======== */
+
+.section-watch {
+    background: url("../img/world-map.png") center no-repeat;
+    background-size: cover;
+}
+
+.section-watch h3,
+.section-watch h4 {
+    color: #484848;
+}
+
+.section-watch .nav-pills .nav-link {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px 30px;
+    color: #484848;
+}
+
+.section-watch .nav-pills {
+    margin-bottom: 20px;
+}
+
+.section-watch .nav-pills .nav-link.active {
+    background-color: #f42267;
+    color: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .35);
+}
+
+.btn-shadow {
+    box-shadow: 0 10px 0 rgb(255, 89, 144);
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: all .5s;
+}
+
+.btn-shadow:hover {
+    box-shadow: 0 5px 0 rgb(255, 89, 144);
+    color: #ffffff;
+    background-color: #da1757;
+}
+
+
+/* ======== section-progress ======== */
+
+.section-progress {
+    background-color: #4b2d7f;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 0;
+}
+
+.section-progress i {
+    font-size: 70px;
+}
+
+.section-progress .num {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 30px 0 20px;
+}
+
+.section-progress h4 {
+    font-size: 30px;
+    height: 72px;
+    overflow: hidden;
+}
+
+.section-progress .progress-item {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    transition: all .5s;
+}
+
+.section-progress .progress-item:hover {
+    background-color: #40286a;
+}
+
+
+/* ======== .section-lets ======== */
+
+.section-lets {
+    background: url("../img/bg-letsgrow.jpg") center no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+
 /* =*=*=*=*=*=*=*=*=*=*=*=*=*= */
 
 
@@ -126,6 +215,9 @@ h4 {
 @media only screen and (max-width: 992px) {
     .main-header-text {
         background-color: rgba(0, 0, 0, .3);
+    }
+    section {
+        padding: 50px 0;
     }
 }
 
@@ -152,6 +244,10 @@ h4 {
     h4 {
         font-size: 30px;
     }
+    .section-progress .progress-item {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -166,12 +262,24 @@ h4 {
     .main-header-buttons .btn:last-child {
         margin-top: 0;
     }
+    .btn-shadow {
+        box-shadow: 0 5px 0 rgb(255, 89, 144);
+        padding: 10px 15px;
+    }
 }
 
 
 /* Extra Small Devices, Phones */
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    .section-watch .nav-pills .nav-link {
+        padding: 8px 16px;
+    }
+    .section-watch .nav-pills .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+}
 
 @media only screen and (max-width: 380px) {
     .main-header .navbar-brand {
